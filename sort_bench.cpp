@@ -10,7 +10,7 @@
 // clang++ -O3 -std=c++11 -stdlib=libc++ sort_bench.cpp -lboost_chrono -lboost_system -o clang_test
 
 //Fill a vector with random numbers in the range [lower, upper]
-void rnd_fill(std::vector<double> &V, const double &lower, const double &upper, const unsigned int &seed) {
+void rnd_fill(std::vector<double> &V, const double lower, const double upper, const unsigned int seed) {
 
     //use the default random engine and an uniform distribution
     std::default_random_engine eng(seed);
